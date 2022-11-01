@@ -1,0 +1,45 @@
+@import 'body';
+@import 'navbar';
+
+
+h2{
+    text-align: center;
+    font-size:6rem;
+    margin-top:2rem;
+    opacity: 0.5;  
+}
+
+form{
+    width: 400px;
+    max-width:100%;
+    margin:3rem auto;
+    .input{
+        display: block;
+        border:none;
+        font-size: 1.5rem;
+        padding: 1rem 2rem;
+        width: 100%;
+        &::placeholder{
+            color:grey;
+            font-style: italic;
+        }
+    }
+    .todos{
+        background-color: #fbfbfe;
+        list-style-type:none;
+        li{
+            font-size: 1.5rem;
+            cursor: pointer;
+            user-select: none;
+            border-top: 1px solid #e5e5e5;
+            padding: 0.3rem 1rem; 
+            width: 100%;
+            color: #333;
+        }
+        li.completed{
+            text-decoration:line-through;
+            color: grey;
+        }
+    }
+
+}

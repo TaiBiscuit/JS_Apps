@@ -1,0 +1,33 @@
+nav{
+    position: fixed;
+    min-width: 290px;
+    top:0px;
+    left:0px;
+    width:300px;
+    height:100%;
+    a{
+        display: block;
+        padding: 10px 30px;
+        color: #fff;
+        text-decoration: none;
+        text-align: center;
+        cursor:pointer;
+        transition: all 1.5;
+        &:hover{
+            background-color: #fff;
+            color:black;
+        }
+    }
+    ul{
+        height: 80%;
+        padding: 0;
+        overflow-y: auto;
+        overflow-x: hidden;
+        li{
+            border-top:1px solid #fff;
+            list-style: none;
+            position: relative;
+            width: 100%;
+        }
+    }
+}
