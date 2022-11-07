@@ -5,12 +5,16 @@ nav{
     left:0px;
     width:300px;
     height:100%;
+    .title{
+        margin: 10px;
+        text-align: center;
+        font-size: 1.8em;
+    }
     a{
         display: block;
         padding: 10px 30px;
         color: #fff;
         text-decoration: none;
-        text-align: center;
         cursor:pointer;
         transition: all 1.5;
         &:hover{
@@ -20,7 +24,7 @@ nav{
     }
     ul{
         height: 80%;
-        padding: 0;
+        padding: 0 20px;
         overflow-y: auto;
         overflow-x: hidden;
         li{

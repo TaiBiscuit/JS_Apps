@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background-color: #e4ff81;   
+}
+
+.wrapper{
+    margin:50px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 265px);
+    gap: 2em;
+}
+
+.wrapper li{
+    background: #2B2A33;
+    height: 20em;
+    list-style: none;
+    border-radius: 3px;
+    padding: 15px 20px 20px;
+}
+
+.wrapper .note{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.add-b, .icon, .bottom-content, .sett, .menu li{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.add-b{
+    flex-direction: column;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.add-b .icon{
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    font-size:2rem;
+    color:#88ABFF;
+    margin-bottom:1rem;
+    justify-content: center;
+    border:2px dashed #88ABFF;
+}
+
+.add-b p{
+    color:#fff;
+    font-weight: 600;
+    margin-top: 20px;
+}
+
+.note p{
+    color:#fff;
+    font-size: 2.1rem;
+    margin-bottom:15px;
+    font-weight: 600;
+    border-bottom: 2px solid #fff;
+}
+
+.note span{
+    color:#fff;
+    font-size:1.1rem;
+    font-weight: 400;
+}
+
+.note .bottom-content{
+    font-size:0.9rem;
+    font-weight: 200;
+    margin-top: 20px;
+    padding-top: 10px;
+    border-top: 2px solid rgba(125, 125, 125, 0.4);
+}
+
+.bottom-content span{
+    font-size: 0.79rem;
+}
+
+.bottom-content .sett{
+    color: #fff;
+    cursor: pointer;
+    font-size: 0.9rem;
+}
+
+.sett{
+    position: relative;
+}
+
+.sett .menu{
+    position: absolute;
+    bottom: 0;
+    right:-5px;
+    transform: scale(0);
+    transform-origin: bottom right;
+    border-radius: 4px;
+    padding: 5px 0;
+    background: #2B2A33;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 15);
+    transition: all 0.4s ease;
+}
+
+.sett:hover .menu{
+    transform: scale(1);
+}
+
+.sett .menu li{
+    height: 20px;
+    cursor: pointer;
+    font-size: 15px;
+    border-radius: 0;
+    padding: 17px 15px;
+    background: #2B2A33;
+    justify-content: flex-start;
+}
+
+.menu li:hover{
+    background: #fff;
+    color:black;
+}
+
+.pop-up-box{
+    position: fixed;
+    top:0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+}
