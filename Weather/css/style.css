@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #2b2a33;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+.searchBox{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.search{
+    height: 50px;
+    border-radius: 5px;
+}
+
+input[type=text]{
+    padding: 12px 20px;
+    font-family: inherit;
+    font-style: italic;
+
+}
+
+.weather{
+    text-align: center;
+    font-size: 1rem;
+}
+
+.weather h2{
+    color: white;
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+}

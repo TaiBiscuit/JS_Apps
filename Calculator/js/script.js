@@ -56,6 +56,10 @@ class Calcu{                                                                    
             case '÷':
                 computation = prev / current
                 break
+            case '√':
+                computation = Math.sqrt(prev)
+                this.equalButton()
+                break
             default:                                                                                    //if the cases do not happen, return
                 return
         }
