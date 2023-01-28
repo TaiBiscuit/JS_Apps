@@ -1,4 +1,4 @@
-const APIKEY = 'b0d987a7d4c84d04ec89b394f00f28b0';
+const APIKEY = '#';
 const searchForm = document.getElementById('form');
 const seachInput = document.getElementById('search');
 const resultBox = document.getElementById('res');
